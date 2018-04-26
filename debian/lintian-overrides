@@ -1,0 +1,10 @@
+# yes, we know
+lxqt-common: desktop-command-not-in-package usr/share/applications/lxqt-xfwm4-settings.desktop xfwm4-settings
+lxqt-common: desktop-command-not-in-package usr/share/applications/lxqt-xfwmtweaks-settings.desktop xfwm4-tweaks-settings
+lxqt-common: desktop-command-not-in-package usr/share/applications/lxqt-xfwmworkspace-settings.desktop xfwm4-workspace-settings
+
+# LXQt isn't a valid category yet - we know
+lxqt-common: desktop-entry-invalid-category LXQt usr/share/applications/lxqt-xfwm4-settings.desktop
+lxqt-common: desktop-entry-invalid-category LXQt usr/share/applications/lxqt-xfwmtweaks-settings.desktop
+lxqt-common: desktop-entry-invalid-category LXQt usr/share/applications/lxqt-xfwmworkspace-settings.desktop
+

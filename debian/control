@@ -1,0 +1,33 @@
+Source: lxqt-common
+Maintainer: Adam Boardman <adamboardman@gmail.com>
+XSBC-Original-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
+Uploaders: Alf Gaida <agaida@siduction.org>,
+           ChangZhuo Chen (陳昌倬) <czchen@debian.org>,
+           Andrew Lee (李健秋) <ajqlee@debian.org>
+Section: x11
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               lxqt-build-tools (>= 0.3.0)
+Standards-Version: 3.9.8
+Vcs-Git: https://github.com/gemian/lxqt-common.git
+Homepage: https://github.com/lxde/lxqt-common
+
+Package: lxqt-common
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         libfile-mimeinfo-perl,
+         x11-utils
+Recommends: oxygen-icon-theme | breeze-icon-theme | faenza-icon-theme,
+            breeze-cursor-theme | chameleon-cursor-theme,
+            xfwm4-theme-breeze, 
+            fonts-hack-ttf,
+            fonts-noto
+Description: Common files for LXQt
+ Some common files for LXQt:
+   * autostart
+   * graphis
+   * themes
+   * xsession
+ .
+ This Package contains common LXQt files.

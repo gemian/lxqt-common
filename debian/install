@@ -1,0 +1,3 @@
+debian/applications /usr/share
+debian/xdg          /etc
+debian/scripts/ /usr/share/lxqt/scripts/

@@ -1,0 +1,120 @@
+lxqt-common (0.11.2+gemian) stretch; urgency=medium
+
+  * Branched for gemian
+
+ -- Adam Boardman <adamboardman@gmail.com>  Thur, 26 Apr 2018 17:00:49 +0000
+
+lxqt-common (0.11.2-2) unstable; urgency=medium
+
+  * provide xfwm4 theme 'Breeze' via xdg 
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 15 Jan 2017 17:04:17 +0100
+
+lxqt-common (0.11.2-1) unstable; urgency=medium
+
+  * Cherry-picking new upstream version 0.11.2. (Closes: #836113)
+  * Set oxygen-icon-theme as default alternative recommendation 
+    (Closes: #851410)
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 15 Jan 2017 01:45:50 +0100
+
+lxqt-common (0.11.1-2) unstable; urgency=medium
+
+  * Added Dependency libfile-mimeinfo-perl
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 03 Jan 2017 15:25:35 +0100
+
+lxqt-common (0.11.1-1) unstable; urgency=medium
+
+  * Cherry-picking new upstream version 0.11.1.
+  * Added to Recommends:
+    - fonts-hack-ttf
+    - fonts-noto
+    - breeze-icon-theme | faenza-icon-theme
+    - breeze-cursor-theme | chameleon-cursor-theme
+  * Added CMAKE_BUILD_TYPE=RelWithDebInfo
+  * Added build dependency lxqt-build-tools
+  * Removed build dependencies:
+    - cmake
+    - libkf5windowsystem-dev
+    - liblxqt0-dev
+    - libqt5svg5-dev
+    - libqt5x11extras5-dev
+    - libqt5xdg-dev
+    - libx11-dev
+    - pkg-config
+    - qttools5-dev
+    - qttools5-dev-tools
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 03 Jan 2017 15:16:12 +0100
+
+lxqt-common (0.11.0-4) unstable; urgency=medium
+
+  * Added debian/applications which contain some modified for LXQt
+    xfwm4 desktop files.
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 06 Dec 2016 17:40:57 +0100
+
+lxqt-common (0.11.0-3) unstable; urgency=medium
+
+  * Cherry-picking new upstream version 0.11.0.
+  * Synced debian foo with experimental
+  * Bumped Standards to 3.9.8, no changes needed
+  * Bumped compat to 10
+  * Removed --parallel from rules, standard in compat 10
+  * Bumped minimum version debhelper (>= 10)
+  * Bumped minimum version liblxqt0-dev (>= 0.11.0),
+  * Bumped minimum version libqt5xdg-dev (>= 2.0.0),
+  * Added build dependency libqt5svg5-dev
+  * Added dependency x11-utils
+  * Following the Multiarch hinter:
+    - Marked lxqt-common Multi-Arch: foreign
+  * Fixed .gitignore, added missed build-stamp
+  * Fixed VCS fields, use https and plain /git/
+  * Fixed copyright Format field
+  * Bumped years in copyright
+  * Install manpages
+  * Removed no longer needed lintian-overrides
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 15 Jul 2016 17:58:40 +0200
+
+lxqt-common (0.10.0-2) unstable; urgency=medium
+
+  * Merge from experimental.
+  * New upstream release.
+  * Set minimum versions for liblxqt and libqtxdg
+  * Removed unused breaks/replaces
+  * Fixed Recommends - lxqt-panel removed, the recommend make no sense
+  * Added linker flags  -Wl,--as-needed
+  * Added upstream signing key and use it in watch file
+  * Fixed VCS-Fields
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 23 Sep 2015 22:51:26 +0200
+
+lxqt-common (0.9.1+20150720-1) unstable; urgency=medium
+
+  [ Alf Gaida ]
+  * initial debian files.
+  * Initial release (Closes: #747599)
+  * Imported Upstream version 0.8.0.
+  * bump standards to 3.9.6.
+  * Min Qt version 5.3.2.
+  * Min liblxqt-qt5-dev version 0.8.0.
+  * added a lintian-override for startlxqt manpage.
+  * enable compton by default.
+  * new release 0.9.1 cleanup debian $foo added source/options.
+  * Some cleanup in debian $foo.
+  * oxygen-icon-theme added as Recommend vcs-fields fixed.
+  * dependencies fixed missed colon in uploaders fixed.
+  * drop metapackage.
+
+  [ Andrew Lee (李健秋) ]
+  * Merging upstream version 0.9.1+20150720.
+  * Removing whitespaces at EOL and EOF.
+  * Added myself as Uploader.
+  * Updating license for LXQt logo.
+
+  [ Alf Gaida ]
+  * copyright fixed, add kde-next.png with lgpl3.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sat, 15 Aug 2015 23:55:52 +0800
