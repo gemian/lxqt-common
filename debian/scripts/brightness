@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+
+import dbus
+import sys
+
+if __name__ == "__main__":
+
+        num_args = len(sys.argv)
+
+        if (num_args == 2 and (sys.argv[1] == '+' or sys.argv[1] == '-')):
+                direction = sys.argv[1]
+        else:
+                print("Usage: %s  +|-" % (sys.argv[0]))
+                exit(1)
+
+        bus = dbus.SystemBus()
+
+        screen = dbus.Interface(bus.get_object('com.canonical.Unity.Screen', '/com/canonical/Unity/Screen'), 'com.canonical.Unity.Screen')
+
+        screen.modifyUserBrightness(direction)
+
