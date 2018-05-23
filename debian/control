@@ -22,7 +22,8 @@ Recommends: oxygen-icon-theme | breeze-icon-theme | faenza-icon-theme,
             breeze-cursor-theme | chameleon-cursor-theme,
             xfwm4-theme-breeze, 
             fonts-hack-ttf,
-            fonts-noto
+            fonts-noto,
+            python3-dbus
 Description: Common files for LXQt
  Some common files for LXQt:
    * autostart
